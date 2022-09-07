@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 3 Exemplo sorteio</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <script>
+        var nJogador1 = prompt("Digite o número do primeiro jogador");
+        nJogador1 = parseInt(nJogador1);
+        var nJogador2 = prompt("Digite o número do segundo jogador");
+        nJogador2 = parseInt(nJogador2);
+        if(nJogador1 == nJogador2) {
+            alert("Os jogadores empataram!!!");
+        }
+        else {
+            var nSorteio = parseInt(Math.random() * 2);
+            if(nSorteio ===  0){
+                if(nJogador1 < nJogador2){
+                    alert("O vencedor do sorteio é o jogador 1")
+                }
+                else {
+                    alert("O vencedor do sorteio é o jogador 2")
+                }
+            }
+            else {
+                if(nJogador1 > nJogador2){
+                    alert("O vencedor do sorteio é o jogador 1")
+                }
+                else {
+                    alert("O vencedor do sorteio é o jogador 2")
+                }
+            }
+        }
+        //*Math.random retorna um número pseudo-aleatório no intervalo 0,1*//
+    </script>
+</body>
+</html>

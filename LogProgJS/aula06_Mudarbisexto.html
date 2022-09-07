@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo mostrar anos bissextos</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <script>
+        var ano = 1004;
+        while (ano <= 2017) {
+            if (!(ano % 100 === 0) || (ano % 400 === 0)) {
+                document.write(ano + "<br>");
+            }
+            else {
+                document.write("O ano " + ano + " Não é ano bissexto" + "<br>");
+            }
+            ano += 4;
+        }      
+    </script>   
+</body>
+</html>

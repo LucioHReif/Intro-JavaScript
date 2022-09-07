@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Tabuada</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <script>
+        var n = prompt("Digite um número");
+        n = parseInt(n); 
+        var indice = 1;
+        while (indice <= 100) {
+            document.write(n + " X " + indice + " = " + (n * indice)+ "<br>");
+            indice = indice + 1; //* indice++ ou indice += 1 *//
+        }
+            document.write("Fim da tabuada");
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo return</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <button onclick="mostrarAreaAlert()">Mostrar área no alert</button>
+    <button onclick="mostrarAreaOut()">Mostrar área no output</button>
+    <div id="output"></div>
+    <script>
+        function mostrarAreaAlert() {
+            var largura = prompt("Digite a largura do retângulo");
+            largura = parseFloat(largura);
+            var altura = prompt("Digite a altura do retângulo");
+            altura = parseFloat(altura);
+            var area = mostrarArea(altura, largura);
+            alert("A área total é: " + area);
+        }
+        function mostrarAreaOut() {
+            var largura = prompt("Digite a largura do retângulo");
+            largura = parseFloat(largura);
+            var altura = prompt("Digite a altura do retângulo");
+            altura = parseFloat(altura);
+            document.querySelector("#output").innerHTML = "A área total é: " + area;
+        }
+        function mostrarArea(l, a) {
+            if (l === undefined || a === undefined) {
+                throw new Error ("mostrarArea precisa receber dois números"); 
+            }
+            if ( isNaN(l) || isNaN(a)) {
+                throw new Error ("Apenas números"); 
+            }
+            return l * a;
+        }
+    </script>
+</body>
+</html>

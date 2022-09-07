@@ -1,0 +1,32 @@
+<html><head>
+    <title>Desafio aula 10</title>
+    <meta charset="utf-8">
+    <script>                    
+        (function(){
+        window.addEventListener('load', init);
+        function init(){
+            var $paragrafos = document.querySelectorAll('p');
+            var x = 0;
+            while($paragrafos[x]){
+                $paragrafos[x].innerHTML = formatarTexto($paragrafos[x].innerHTML);
+                x++;
+            }
+        }
+        function formatarTexto(texto){
+            var numeroMaximoCaracteres = 50;
+            if(texto.length <= numeroMaximoCaracteres) {
+                return texto;
+            }
+            var subTexto = texto.slice(0, numeroMaximoCaracteres);
+            return subTexto + '...';
+        }
+        })()
+    </script>  
+</head>
+<body>
+    <h1>Curso Javascript Completo 2018</h1>   
+    <p>Lorem ipsum <b>dolor sit</b> amet, consectetur adi...</p>  
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicin...</p>   
+    <p>Lorem ipsum dolor sit amet. </p>
+</body>
+</html>

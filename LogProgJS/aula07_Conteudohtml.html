@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Inserção de conteúdo</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <div id="output"></div>
+    <script>
+        var output = document.querySelector("#output");
+        var mensagem = '';
+        for (var i = 0; i < 101; i++){
+            mensagem += "i: " + i + "<br>";
+        }
+        output.innerHTML = mensagem;
+    </script>
+</body>
+</html>

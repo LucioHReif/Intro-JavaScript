@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Calculadora com funções</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <button onclick="Adicao()">+</button>
+    <button onclick="Subtracao()">-</button>
+    <button onclick="Multiplicacao()">x</button>
+    <button onclick="Divisao()">/</button>
+    <div id="output"></div>
+    <script>
+            var n1 = prompt("Digite um número");
+            n1 = parseFloat(n1);
+            escreve();
+            function escreve() {
+                var output = document.querySelector("#output");
+                output.innerHTML = n1;
+            }
+            function Adicao() {
+                var n = prompt("Digite outro número");
+                n = parseFloat(n);
+                n1 = n1 + n;
+                escreve();
+            }
+            function Subtracao() {
+                var n = prompt("Digite outro número");
+                n = parseFloat(n);
+                n1 = n1 - n;
+                escreve();
+            }
+            function Multiplicacao() {
+                var n = prompt("Digite outro número");
+                n = parseFloat(n);
+                n1 = n1 * n;
+                escreve();
+            }
+            function Divisao() {
+                var n = prompt("Digite outro número");
+                n = parseFloat(n);
+                n1 = n1 / n;
+                escreve();
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo medidas retângulo</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    <button onclick="mostrarArea(largura, altura)">Mostra área</button>
+    <script>
+        var largura = prompt("Digite a largura do retângulo");
+        largura = parseFloat(largura);
+        var altura = prompt("Digite a altura do retângulo");
+        altura = parseFloat(altura);
+        function mostrarArea(l, a) {
+            alert("A largura é " + l);
+            alert("A altura é " + a);
+            alert("A área total é " + (l * a));
+        }
+    </script>
+</body>
+</html>
